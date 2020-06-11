@@ -17,6 +17,7 @@ class Triangle
     :equileteral 
     else 
       :scalene
+      binding.pry
     end 
   end 
   
