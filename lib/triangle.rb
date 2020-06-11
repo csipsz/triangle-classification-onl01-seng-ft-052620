@@ -44,3 +44,4 @@ end
 
 
 3 = Triangle.new(0,0,0)
+3.kind
