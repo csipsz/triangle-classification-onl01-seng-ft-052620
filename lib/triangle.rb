@@ -14,9 +14,12 @@ class Triangle
       raise TriangleError 
     end 
     
-    if  
+    if side1 == side2 && side2 == side3
       :equilateral
-    elsif side1 == side2 && side2 == side3
+    elsif side1 != side2 && side2 != side3
+      :isosceles
+    else 
+      :scalene
 
   
   end 
