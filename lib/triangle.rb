@@ -9,7 +9,11 @@ class Triangle
   def kind 
     if side1 != side2 && side2 != side3 
       :scalene 
-    elsif 
+    elsif side1 == side2 && side2 == side3
+    :equileteral 
+    else 
+      :scalene
+    end 
   end 
   
   class TriangleError < StandardError 
