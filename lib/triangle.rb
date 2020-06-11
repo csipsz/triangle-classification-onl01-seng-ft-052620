@@ -32,6 +32,9 @@ class Triangle
   end 
   
   class TriangleError < StandardError 
+    def message 
+      "Yo, the sides should be bigger than 0 and one side cannot exceed the other two!"
+    end 
   end 
 end
 
