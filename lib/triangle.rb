@@ -15,7 +15,7 @@ class Triangle
       :scalene 
     elsif @side1 == @side2 && @side2 == @side3
     :equileteral 
-    else 
+  else
       :scalene
       binding.pry
     end 
