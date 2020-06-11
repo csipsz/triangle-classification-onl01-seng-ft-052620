@@ -11,7 +11,11 @@ class Triangle
   
   def kind 
     if bad_for_a_triangle || impossible_sides 
-      
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message
+      end
     end 
     
     if side1 == side2 && side2 == side3
@@ -33,11 +37,11 @@ class Triangle
   
   class TriangleError < StandardError 
     def message 
-      "Yo, the sides should be bigger than 0 and one side cannot exceed the other two!"
+      puts "Yo, the sides should be bigger than 0 and one side cannot exceed the other two!"
     end 
   end 
 end
 
 
-3 = Triangle.new(0,0,0)
+hi = Triangle.new(0,0,0)
 3.kind
