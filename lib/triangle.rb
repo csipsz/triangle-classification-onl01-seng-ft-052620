@@ -43,4 +43,4 @@ class Triangle
 end
 
 
-
+3 = Triangle.new(0,0,0)
