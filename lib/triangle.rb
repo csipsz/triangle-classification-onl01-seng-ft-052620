@@ -44,4 +44,4 @@ end
 
 
 hi = Triangle.new(0,0,0)
-3.kind
+hi.kind
