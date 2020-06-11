@@ -11,14 +11,11 @@ class Triangle
   end 
   
   def kind 
-    if @side1 != @side2 && @side2 != @side3 
-      :scalene 
-    elsif @side1 == @side2 && @side2 == @side3
-    :equileteral 
-  else
-      :scalene
-      binding.pry
-    end 
+  
+  end 
+  
+  def bad_for_a_triangle 
+    side1 <= 0 || side2 <= 0 || side3 <= 0 
   end 
   
   class TriangleError < StandardError 
