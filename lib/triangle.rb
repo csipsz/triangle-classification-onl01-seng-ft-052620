@@ -13,9 +13,9 @@ class Triangle
   def kind 
     if bad_for_a_triangle || impossible_sides 
       raise TriangleError 
-    else 
-      :equilateral
     end 
+    
+    
   
   end 
   
