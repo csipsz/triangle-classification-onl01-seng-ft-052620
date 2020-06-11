@@ -36,12 +36,6 @@ class Triangle
   end 
   
   class TriangleError < StandardError 
-    def message 
-      puts "Yo, the sides should be bigger than 0 and one side cannot exceed the other two!"
-    end 
   end 
 end
 
-
-hi = Triangle.new(0,0,0)
-hi.kind
