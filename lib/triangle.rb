@@ -1,5 +1,4 @@
-require 'pry'
-
+=begin
 class Triangle
   
   attr_accessor :side1, :side2, :side3
@@ -36,3 +35,5 @@ class Triangle
   class TriangleError < StandardError 
   end 
 end
+
+=end 
