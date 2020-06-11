@@ -13,6 +13,7 @@ class Triangle
     if bad_for_a_triangle || impossible_sides 
       begin
       raise TriangleError 
+      rescue TriangleError => error 
       
     end 
     
