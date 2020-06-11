@@ -11,9 +11,9 @@ class Triangle
   end 
   
   def kind 
-    if side1 != side2 && side2 != side3 
+    if @side1 != @side2 && @side2 != @side3 
       :scalene 
-    elsif side1 == side2 && side2 == side3
+    elsif @side1 == @side2 && @side2 == @side3
     :equileteral 
     else 
       :scalene
