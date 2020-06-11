@@ -36,4 +36,6 @@ class Triangle
   end 
 end
 
+triangle = Triangle.new(5, 6, 6)
+
 
