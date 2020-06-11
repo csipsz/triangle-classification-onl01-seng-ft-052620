@@ -21,8 +21,6 @@ class Triangle
     else 
       :isosceles
     end 
-
-  
   end 
   
   def bad_for_a_triangle 
