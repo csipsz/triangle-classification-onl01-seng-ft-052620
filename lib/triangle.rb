@@ -13,14 +13,7 @@ class Triangle
     if bad_for_a_triangle || impossible_sides 
       raise TriangleError 
     end 
-    
-    if x == y && y == z && x == z
-      :equilateral
-    elsif x != y && y != z && z != x
-      :scalene 
-    else 
-      :isosceles
-    end 
+
   
   end 
   
