@@ -11,11 +11,7 @@ class Triangle
   
   def kind 
     if bad_for_a_triangle || impossible_sides 
-      begin
         raise TriangleError
-      rescue TriangleError => error
-          puts error.message
-      end
     end 
     
     if side1 == side2 && side2 == side3
